@@ -5,9 +5,6 @@ on:
 jobs:
   zap_scan:
     runs-on: ubuntu-latest
-#    permissions:
-#      contents: read
-#      packages: write
     name: Scan the web application
     steps:
       - name: Checkout
@@ -25,4 +22,4 @@ jobs:
         uses: actions/upload-artifact@v1
         with:
           name: Zap Report
-          path: ./zap_full_report.html
+          path: ./report_html.html
