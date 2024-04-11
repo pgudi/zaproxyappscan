@@ -21,8 +21,8 @@ jobs:
           target: 'https://www.zaproxy.org'
           rules_file_name: .github/zap.ignore
           cmd_options: '-a'
-      - name: publish test results
+      - name: Publish Test results
         uses: actions/upload-artifact@v1
         with:
-          name: zap report
+          name: Zap Report
           path: ./zap_baseline_report.html
